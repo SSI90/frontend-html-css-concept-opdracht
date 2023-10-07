@@ -1,17 +1,18 @@
 
-/*////////////////////////
-    Table of Contents
-    1. Global Styles
-    2. Typography
-    3. Layout
-        3.1 Reusables
-        3.2 Other
-    4. Areas
-        4.1 Header
-        4.2 Introduction
-        etc.
-    5. Media Queries
-////////////////////////*/
+/*/
+/*    Table of Contents*/
+/*    1. Global Styles*/
+/*    2. Typography*/
+/*    3. Layout*/
+/*        3.1 Reusables*/
+/*        3.2 Other*/
+/*    4. Areas*/
+/*        4.1 Header*/
+/*        4.2 Introduction*/
+/*        4.3 Projects
+          4.4 Services
+/*    5. Media Queries */
+/*///////////////////////!*/
 
 /*Paars #5722CD;*/
 /*Blauw #4845E4;*/
@@ -34,16 +35,29 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+img{
+    width: 100%;
+}
 
+.purple-squiggle{
+    width: 50px;
+    padding: 35px 0 35px 0;
+}
+
+
+
+/* ------------------------------- 2. Typography ----------------------------------- */
 h1 {
     font-family: 'Merriweather', serif;
     font-size: 45px;
     font-weight: 400;
 }
 
-
-/* ------------------------------- 2. Typography ----------------------------------- */
-
+h2 {
+    font-family: "Merriweather", serif;
+    font-size: 25px;
+    font-weight: 600;
+}
 
 
 /* ------------------------------- 3. Layout --------------------------------------- */
@@ -60,7 +74,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0px 20px;
+    margin: 0 20px;
     /*padding: 0 0 100px 0;*/
     border: 2px dashed orange;
 }
@@ -113,8 +127,9 @@ h1 {
     border: none;
     padding: 17px 39px;
     font-family: inherit;
+    text-transform: uppercase;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 13px;
     border-radius: 40px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15);
 
@@ -132,5 +147,119 @@ h1 {
 }
 
 /* --------------- 4.2 Introduction ------------------- */
+
+.hello-intro{
+    text-align: center;
+    line-height: 50px;
+    padding: 90px 50px;
+    color: #5722CD;
+    background-color: white;
+}
+
+
+.question-line{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 80px 20px 0 20px;
+    color: black;
+    font-weight: 600;
+}
+
+/* --------------------- 4.3 Projects -----------------------*/
+.work-section{
+    background-color: #F3F6F9;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.rolling-stone-article{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 450px;
+    justify-content: space-between;
+}
+
+.rolling-stone-title{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    padding: 90px 90px 90px 50px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.rolling-stone-wrapper{
+    flex-basis: 700px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding: 50px 40px;
+}
+
+.rolling-stone-image{
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15)
+}
+
+
+.variety-article{
+    display: flex;
+    flex-basis: 450px;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.variety-title{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    padding: 90px 50px 90px 90px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.variety-wrapper{
+    flex-basis: 700px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding: 50px 40px;
+}
+
+.variety-image{
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15)
+}
+
+
+.worth-article{
+    display: flex;
+    flex-basis: 450px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.worth-title{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    padding: 90px 90px 90px 50px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.worth-wrapper{
+    flex-basis: 700px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding: 50px 40px;
+}
+
+.worth-image{
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15)
+}
+
+
+/*--------------------- 4.4 Services -----------------*/
+
+
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
