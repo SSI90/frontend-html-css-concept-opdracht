@@ -1,4 +1,3 @@
-
 /*/
 /*    Table of Contents*/
 /*    1. Global Styles*/
@@ -35,15 +34,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-img{
+img {
     width: 100%;
 }
 
-.purple-squiggle{
+.purple-squiggle {
     width: 50px;
     padding: 35px 0 35px 0;
 }
-
 
 
 /* ------------------------------- 2. Typography ----------------------------------- */
@@ -63,7 +61,7 @@ h2 {
 /* ------------------------------- 3. Layout --------------------------------------- */
 
 /* --------------- 3.1 Reusables ----------------------- */
-.outer-container{
+.outer-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -85,25 +83,25 @@ h2 {
 
 /* --------------- 4.1 Header ------------------------- */
 .header-section {
-    background: rgb(75,73,232);
-    background: linear-gradient(135deg, rgba(75,73,232,1) 43%, rgba(87,34,205,1) 95%);
+    background: rgb(75, 73, 232);
+    background: linear-gradient(135deg, rgba(75, 73, 232, 1) 43%, rgba(87, 34, 205, 1) 95%);
     color: white;
 
 }
 
-.header-content-text{
+.header-content-text {
     text-align: center;
     line-height: 65px;
     padding: 90px 50px;
 }
 
-.header-content-text p{
+.header-content-text p {
     font-size: 20px;
     font-weight: 300;
 }
 
 
-.header-navigation{
+.header-navigation {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -135,20 +133,20 @@ h2 {
 
 }
 
-.header-content-image{
+.header-content-image {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     padding: 50px 0 0 0;
 }
 
-.header-image{
+.header-image {
     width: 70px;
 }
 
 /* --------------- 4.2 Introduction ------------------- */
 
-.hello-intro{
+.hello-intro {
     text-align: center;
     line-height: 50px;
     padding: 90px 50px;
@@ -157,7 +155,7 @@ h2 {
 }
 
 
-.question-line{
+.question-line {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -167,21 +165,22 @@ h2 {
 }
 
 /* --------------------- 4.3 Projects -----------------------*/
-.work-section{
+.work-section {
     background-color: #F3F6F9;
     display: flex;
     flex-direction: column;
+    padding: 41px 41px;
 }
 
 
-.rolling-stone-article{
+.rolling-stone-article {
     display: flex;
     flex-direction: row;
     flex-basis: 450px;
     justify-content: space-between;
 }
 
-.rolling-stone-title{
+.rolling-stone-title {
     display: flex;
     flex-direction: column;
     flex-basis: 400px;
@@ -190,26 +189,26 @@ h2 {
     font-size: 16px;
 }
 
-.rolling-stone-wrapper{
+.rolling-stone-wrapper {
     flex-basis: 700px;
     flex-grow: 0;
     flex-shrink: 1;
     padding: 50px 40px;
 }
 
-.rolling-stone-image{
+.rolling-stone-image {
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15)
 }
 
 
-.variety-article{
+.variety-article {
     display: flex;
     flex-basis: 450px;
     justify-content: space-between;
     flex-direction: row-reverse;
 }
 
-.variety-title{
+.variety-title {
     display: flex;
     flex-direction: column;
     flex-basis: 400px;
@@ -218,26 +217,26 @@ h2 {
     font-size: 16px;
 }
 
-.variety-wrapper{
+.variety-wrapper {
     flex-basis: 700px;
     flex-grow: 0;
     flex-shrink: 1;
     padding: 50px 40px;
 }
 
-.variety-image{
+.variety-image {
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15)
 }
 
 
-.worth-article{
+.worth-article {
     display: flex;
     flex-basis: 450px;
     justify-content: space-between;
     flex-direction: row;
 }
 
-.worth-title{
+.worth-title {
     display: flex;
     flex-direction: column;
     flex-basis: 400px;
@@ -246,19 +245,195 @@ h2 {
     font-size: 16px;
 }
 
-.worth-wrapper{
+.worth-wrapper {
     flex-basis: 700px;
     flex-grow: 0;
     flex-shrink: 1;
     padding: 50px 40px;
 }
 
-.worth-image{
+.worth-image {
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15)
 }
 
 
 /*--------------------- 4.4 Services -----------------*/
+.tiles-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    border: 2px dashed blue;
+    padding: 50px 50px;
+}
+
+
+.web-design-tile {
+    border: 2px solid #5722CD;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 332px;
+    padding: 32px;
+    align-items: flex-start;
+    font-size: 14px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15)
+}
+
+.web-design-tile h2{
+    padding: 10px 0 10px 0;
+    color: #5722CD;
+    font-size: 22px;
+}
+
+.web-design-tile p{
+    color: #7A7A7A;
+}
+
+.icon-web-design{
+    width: 60px;
+}
+
+
+
+.web-dev-tile {
+    border: 2px solid #5722CD;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 332px;
+    padding: 32px;
+    align-items: flex-start;
+    font-size: 14px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15)
+}
+
+.web-dev-tile h2{
+    padding: 10px 0 10px 0;
+    color: #5722CD;
+    font-size: 22px;
+}
+
+.web-dev-tile p{
+    color: #7A7A7A;
+}
+
+.icon-web-dev{
+    width: 60px;
+}
+
+
+
+
+.user-ex-tile {
+    border: 2px solid #5722CD;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 332px;
+    padding: 31px;
+    align-items: flex-start;
+    font-size: 14px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15)
+}
+
+.user-ex-tile h2{
+    padding: 10px 0 10px 0;
+    color: #5722CD;
+    font-size: 22px;
+}
+
+.user-ex-tile p{
+    color: #7A7A7A;
+}
+
+.icon-ux {
+    width: 60px;
+}
+
+
+
+
+
+.logo-design-tile {
+    border: 2px solid #5722CD;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 332px;
+    padding: 29px;
+    align-items: flex-start;
+    font-size: 14px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15)
+}
+
+.logo-design-tile h2{
+    padding: 10px 0 10px 0;
+    color: #5722CD;
+    font-size: 22px;
+}
+
+.logo-design-tile p{
+    color: #7A7A7A;
+}
+
+.icon-logo-design {
+    width: 60px;
+}
+
+
+
+
+.seo-tile {
+    border: 2px solid #5722CD;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 332px;
+    padding: 31px;
+    align-items: flex-start;
+    font-size: 14px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15)
+}
+
+.seo-tile h2{
+    padding: 10px 0 10px 0;
+    color: #5722CD;
+    font-size: 22px;
+}
+
+.seo-tile p{
+    color: #7A7A7A;
+}
+
+.icon-seo {
+    width: 60px;
+}
+
+
+
+.copy-tile {
+    border: 2px solid #5722CD;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 332px;
+    padding: 38px;
+    align-items: flex-start;
+    font-size: 14px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15)
+
+}
+
+.copy-tile h2{
+    padding: 10px 0 10px 0;
+    color: #5722CD;
+    font-size: 22px;
+}
+
+.copy-tile p{
+    color: #7A7A7A;
+}
+
+.icon-copy-writing {
+    width: 60px;
+}
 
 
 
