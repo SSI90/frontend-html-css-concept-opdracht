@@ -1,17 +1,19 @@
-/*/
-/*    Table of Contents*/
-/*    1. Global Styles*/
-/*    2. Typography*/
-/*    3. Layout*/
-/*        3.1 Reusables*/
-/*        3.2 Other*/
-/*    4. Areas*/
-/*        4.1 Header*/
-/*        4.2 Introduction*/
+
+/* Table of Contents
+/*    1. Global Styles
+/*    2. Typography
+/*    3. Layout
+/*        3.1 Reusables
+/*        3.2 Other
+/*    4. Areas
+/*        4.1 Header
+/*        4.2 Introduction
 /*        4.3 Projects
           4.4 Services
-/*    5. Media Queries */
-/*///////////////////////!*/
+          4.5 Form
+          4.6 Footer
+/*    5. Media Queries
+---------------------------------------------------------------
 
 /*Paars #5722CD;*/
 /*Blauw #4845E4;*/
@@ -43,6 +45,9 @@ img {
     padding: 35px 0 35px 0;
 }
 
+input[type=text] {
+    width: 600px;
+}
 
 /* ------------------------------- 2. Typography ----------------------------------- */
 h1 {
@@ -434,6 +439,83 @@ h2 {
 .icon-copy-writing {
     width: 60px;
 }
+
+/*!* ------------------------------- 4.5 Form -------------------------------- **/
+
+.form-container{
+    background: rgb(75, 73, 232);
+    background: linear-gradient(135deg, rgba(75, 73, 232, 1) 43%, rgba(87, 34, 205, 1) 95%);
+    color: white;
+    padding: 100px;
+    border: 2px dashed yellow;
+}
+
+.form-title h2{
+    font-size: 40px;
+    padding: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 655px;
+    padding: 25px;
+    border: 2px dashed pink;
+}
+
+.name-title{
+    font-size: 12px;
+    color: white;
+    font-weight: 600;
+}
+
+#name-field{
+    border: none;
+    padding: 10px;
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+
+.email-title{
+    font-size: 12px;
+    color: white;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+#email-adres{
+    border: none;
+    padding: 10px;
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+.message-title{
+    font-size: 12px;
+    color: white;
+    font-weight: 600;
+}
+
+#comment-section{
+    border: none;
+    padding: 10px;
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 12px;
+    border-radius: 2px;
+    width: 600px;
+}
+
+
+
+/* ------------------------------- 5. Footer -------------------------------- *
 
 
 
