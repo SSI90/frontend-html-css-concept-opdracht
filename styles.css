@@ -1,0 +1,680 @@
+
+/* Table of Contents
+/*    1. Global Styles
+/*    2. Typography
+/*    3. Layout
+/*        3.1 Reusables
+/*        3.2 Other
+/*    4. Areas
+/*        4.1 Header
+/*        4.2 Introduction
+/*        4.3 Projects
+          4.4 Services
+          4.5 Form
+          4.6 Footer
+/*    5. Media Queries
+---------------------------------------------------------------
+
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+.purple-squiggle {
+    width: 50px;
+    padding: 35px 0 35px 0;
+}
+
+input[type=text] {
+    width: 600px;
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: "Merriweather", serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+/* unvisited link */
+header a:link {
+    color: white;
+    text-decoration: none;
+    font-family: inherit;
+}
+/* visited link */
+header a:visited {
+    color: white;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+main a:link{
+    color: #5722CD;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+main a:visited{
+    color: #5722CD;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+
+/* --------------- 3.1 Reusables ----------------------- */
+.outer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inner-container {
+    flex-basis: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+.header-section {
+    background: rgb(75, 73, 232);
+    background: linear-gradient(135deg, rgba(75, 73, 232, 1) 43%, rgba(87, 34, 205, 1) 95%);
+    color: white;
+
+}
+
+.header-content-text {
+    text-align: center;
+    line-height: 65px;
+    padding: 90px 50px;
+}
+
+.header-content-text p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+.header-navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.header-navigation ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 300px;
+    align-items: center;
+    color: white;
+
+}
+
+.header-content-text button {
+    background-color: #ED4385;
+    color: white;
+    border: none;
+    padding: 17px 39px;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 13px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.15);
+
+}
+
+.header-content-image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 50px 0 0 0;
+}
+
+.header-image {
+    width: 70px;
+}
+
+/* --------------- 4.2 Introduction ------------------- */
+
+.hello-intro {
+    text-align: center;
+    line-height: 50px;
+    padding: 90px 50px;
+    color: #5722CD;
+    background-color: white;
+}
+
+
+.question-line {
+    display: flex;
+    flex-direction: row;
+    padding: 70px 20px 0 20px;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* --------------------- 4.3 Projects -----------------------*/
+.work-section {
+    background-color: #F3F6F9;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+
+
+.rolling-stone-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.rolling-stone-title {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    padding: 90px 90px 90px 50px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.rolling-stone-wrapper {
+    flex-basis: 700px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding: 50px 40px;
+}
+
+.rolling-stone-image {
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15)
+}
+
+
+.variety-article {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+}
+
+.variety-title {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    padding: 90px 50px 90px 90px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.variety-wrapper {
+    flex-basis: 700px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding: 50px 40px;
+}
+
+.variety-image {
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15)
+}
+
+
+.worth-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.worth-title {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    padding: 90px 90px 90px 50px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.worth-wrapper {
+    flex-basis: 700px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding: 50px 40px;
+}
+
+.worth-image {
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15)
+}
+
+
+/*--------------------- 4.4 Services -----------------*/
+.tiles-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    padding: 50px 50px;
+}
+
+
+.web-design-tile {
+    border: 2px solid #5722CD;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 332px;
+    padding: 32px;
+    align-items: flex-start;
+    font-size: 14px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15)
+}
+
+.web-design-tile h2{
+    padding: 10px 0 10px 0;
+    color: #5722CD;
+    font-size: 22px;
+}
+
+.web-design-tile p{
+    color: #7A7A7A;
+}
+
+.icon-web-design{
+    width: 60px;
+}
+
+
+
+.web-dev-tile {
+    border: 2px solid #5722CD;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 332px;
+    padding: 32px;
+    align-items: flex-start;
+    font-size: 14px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15)
+}
+
+.web-dev-tile h2{
+    padding: 10px 0 10px 0;
+    color: #5722CD;
+    font-size: 22px;
+}
+
+.web-dev-tile p{
+    color: #7A7A7A;
+}
+
+.icon-web-dev{
+    width: 60px;
+}
+
+
+
+
+.user-ex-tile {
+    border: 2px solid #5722CD;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 332px;
+    padding: 31px;
+    align-items: flex-start;
+    font-size: 14px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15)
+}
+
+.user-ex-tile h2{
+    padding: 10px 0 10px 0;
+    color: #5722CD;
+    font-size: 22px;
+}
+
+.user-ex-tile p{
+    color: #7A7A7A;
+}
+
+.icon-ux {
+    width: 60px;
+}
+
+
+
+
+
+.logo-design-tile {
+    border: 2px solid #5722CD;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 332px;
+    padding: 29px;
+    align-items: flex-start;
+    font-size: 14px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15)
+}
+
+.logo-design-tile h2{
+    padding: 10px 0 10px 0;
+    color: #5722CD;
+    font-size: 22px;
+}
+
+.logo-design-tile p{
+    color: #7A7A7A;
+}
+
+.icon-logo-design {
+    width: 60px;
+}
+
+
+
+
+.seo-tile {
+    border: 2px solid #5722CD;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 332px;
+    padding: 31px;
+    align-items: flex-start;
+    font-size: 14px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15)
+}
+
+.seo-tile h2{
+    padding: 10px 0 10px 0;
+    color: #5722CD;
+    font-size: 22px;
+}
+
+.seo-tile p{
+    color: #7A7A7A;
+}
+
+.icon-seo {
+    width: 60px;
+}
+
+
+
+.copy-tile {
+    border: 2px solid #5722CD;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 332px;
+    padding: 38px;
+    align-items: flex-start;
+    font-size: 14px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15)
+
+}
+
+.copy-tile h2{
+    padding: 10px 0 10px 0;
+    color: #5722CD;
+    font-size: 22px;
+}
+
+.copy-tile p{
+    color: #7A7A7A;
+}
+
+.icon-copy-writing {
+    width: 60px;
+}
+
+/*!* ------------------------------- 4.5 Form -------------------------------- **/
+
+.form-container{
+    background: rgb(75, 73, 232);
+    background: linear-gradient(135deg, rgba(75, 73, 232, 1) 43%, rgba(87, 34, 205, 1) 95%);
+    color: white;
+    padding: 60px;
+}
+
+.form-title h2{
+    font-size: 40px;
+    padding: 20px;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 400px;
+    padding: 25px;
+}
+
+.name-title{
+    font-size: 12px;
+    color: white;
+    font-weight: 600;
+}
+
+#name-field{
+    border: none;
+    padding: 10px;
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 12px;
+    border-radius: 2px;
+    height: 42px;
+}
+
+
+.email-title{
+    font-size: 12px;
+    color: white;
+    font-weight: 600;
+    padding-top: 25px;
+}
+
+#email-adres{
+    border: none;
+    padding: 10px;
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 12px;
+    border-radius: 2px;
+    height: 42px;
+}
+
+.message-title{
+    font-size: 12px;
+    color: white;
+    font-weight: 600;
+    padding-top: 40px;
+}
+
+#comment-section{
+    border: none;
+    padding: 10px;
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 12px;
+    border-radius: 2px;
+    width: 600px;
+    height: 191px;
+    margin-bottom: 30px;
+}
+
+.button-form{
+    background-color: #ED4385;
+    color: white;
+    border: none;
+    padding: 20px 75px;
+    text-align: start;
+    align-self: center;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 12px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.15);
+}
+
+/* ------------------------------- 5. Footer -------------------------------- *
+/**/
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
+
+@media screen and (max-width: 576px) {
+    .header-navigation {
+        justify-content: space-evenly;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .header-content-text h1 {
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 50px;
+        padding: 30px 0 5px 0;
+    }
+
+    .hello-intro p {
+        font-size: 16px;
+        padding: 8px 0 8px 0;
+        line-height: 30px;
+
+    }
+
+    .rolling-stone-article {
+        flex-direction: column-reverse;
+    }
+
+    .rolling-stone-title {
+        flex-basis: 240px;
+        padding: 5px 72px 90px 40px;
+        font-size: 15px;
+    }
+
+
+    .rolling-stone-wrapper {
+        flex-basis: 330px;
+
+    }
+
+
+    .variety-article {
+        flex-direction: column-reverse;
+    }
+
+    .variety-title {
+        flex-basis: 240px;
+        padding: 5px 60px 90px 40px;
+        font-size: 15px;
+    }
+
+
+    .variety-wrapper {
+        flex-basis: 330px;
+
+    }
+
+
+    .worth-article {
+        flex-direction: column-reverse;
+    }
+
+    .worth-title {
+        flex-basis: 240px;
+        padding: 5px 72px 90px 40px;
+        font-size: 15px;
+    }
+
+
+    .worth-wrapper {
+        flex-basis: 330px;
+
+    }
+
+    .form-container{
+        padding: 60px;
+    }
+
+    input[type=text] {
+        width: 414px;
+    }
+
+    .form-title h2{
+        font-size: 32px;
+        padding: 15px;
+    }
+
+    .form-title p{
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    .form{
+        flex-basis: 355px;
+        padding: 0px;
+    }
+
+    .name-title{
+        padding-top: 25px;
+    }
+
+
+    #comment-section{
+        width: 414px;
+        height: 191px;
+
+    }
+
+    .button-form{
+        padding: 18px 70px;
+
+    }
+
+
+}
+
+
+
