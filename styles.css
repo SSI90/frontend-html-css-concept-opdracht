@@ -15,13 +15,6 @@
 /*    5. Media Queries
 ---------------------------------------------------------------
 
-/*Paars #5722CD;*/
-/*Blauw #4845E4;*/
-/*Roze #ED4385;*/
-/*Zwart #0C0C0C (voor standaard tekst);*/
-/*Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:*/
-/*Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)*/
-/*Grijs #7A7A7A (voor de service-tegel tekst);*/
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
@@ -103,8 +96,6 @@ main a:visited{
     flex-direction: column;
     align-items: center;
     margin: 0 20px;
-    /*padding: 0 0 100px 0;*/
-    border: 2px dashed orange;
 }
 
 /* --------------- 3.2 Other --------------------------- */
@@ -187,7 +178,7 @@ main a:visited{
 
 
 .question-line {
-    isplay: flex;
+    display: flex;
     flex-direction: row;
     padding: 70px 20px 0 20px;
     color: black;
@@ -199,16 +190,16 @@ main a:visited{
 .work-section {
     background-color: #F3F6F9;
     display: flex;
-    flex-direction: column;
-    padding: 41px 41px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px 0;
 }
 
 
 .rolling-stone-article {
     display: flex;
     flex-direction: row;
-    flex-basis: 450px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .rolling-stone-title {
@@ -234,9 +225,9 @@ main a:visited{
 
 .variety-article {
     display: flex;
-    flex-basis: 450px;
-    justify-content: space-between;
     flex-direction: row-reverse;
+    justify-content: center;
+
 }
 
 .variety-title {
@@ -262,9 +253,8 @@ main a:visited{
 
 .worth-article {
     display: flex;
-    flex-basis: 450px;
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: center;
 }
 
 .worth-title {
@@ -296,7 +286,6 @@ main a:visited{
     align-items: center;
     flex-wrap: wrap;
     row-gap: 25px;
-    border: 2px dashed blue;
     padding: 50px 50px;
 }
 
@@ -473,13 +462,13 @@ main a:visited{
     background: linear-gradient(135deg, rgba(75, 73, 232, 1) 43%, rgba(87, 34, 205, 1) 95%);
     color: white;
     padding: 60px;
-    border: 2px dashed yellow;
 }
 
 .form-title h2{
     font-size: 40px;
     padding: 20px;
 }
+
 
 .form{
     display: flex;
@@ -488,7 +477,6 @@ main a:visited{
     flex-wrap: wrap;
     flex-basis: 400px;
     padding: 25px;
-    border: 2px dashed pink;
 }
 
 .name-title{
@@ -504,6 +492,7 @@ main a:visited{
     font-weight: 300;
     font-size: 12px;
     border-radius: 2px;
+    height: 42px;
 }
 
 
@@ -511,7 +500,7 @@ main a:visited{
     font-size: 12px;
     color: white;
     font-weight: 600;
-    padding-top: 10px;
+    padding-top: 25px;
 }
 
 #email-adres{
@@ -521,13 +510,14 @@ main a:visited{
     font-weight: 300;
     font-size: 12px;
     border-radius: 2px;
+    height: 42px;
 }
 
 .message-title{
     font-size: 12px;
     color: white;
     font-weight: 600;
-    padding-top: 15px;
+    padding-top: 40px;
 }
 
 #comment-section{
@@ -538,6 +528,7 @@ main a:visited{
     font-size: 12px;
     border-radius: 2px;
     width: 600px;
+    height: 191px;
     margin-bottom: 30px;
 }
 
@@ -571,3 +562,119 @@ footer{
 }
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
+@media screen and (max-width: 576px) {
+    .header-navigation {
+        justify-content: space-evenly;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .header-content-text h1 {
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 50px;
+        padding: 30px 0 5px 0;
+    }
+
+    .hello-intro p {
+        font-size: 16px;
+        padding: 8px 0 8px 0;
+        line-height: 30px;
+
+    }
+
+    .rolling-stone-article {
+        flex-direction: column-reverse;
+    }
+
+    .rolling-stone-title {
+        flex-basis: 240px;
+        padding: 5px 72px 90px 40px;
+        font-size: 15px;
+    }
+
+
+    .rolling-stone-wrapper {
+        flex-basis: 330px;
+
+    }
+
+
+    .variety-article {
+        flex-direction: column-reverse;
+    }
+
+    .variety-title {
+        flex-basis: 240px;
+        padding: 5px 60px 90px 40px;
+        font-size: 15px;
+    }
+
+
+    .variety-wrapper {
+        flex-basis: 330px;
+
+    }
+
+
+    .worth-article {
+        flex-direction: column-reverse;
+    }
+
+    .worth-title {
+        flex-basis: 240px;
+        padding: 5px 72px 90px 40px;
+        font-size: 15px;
+    }
+
+
+    .worth-wrapper {
+        flex-basis: 330px;
+
+    }
+
+    .form-container{
+        padding: 60px;
+    }
+
+    input[type=text] {
+        width: 414px;
+    }
+
+    .form-title h2{
+        font-size: 32px;
+        padding: 15px;
+    }
+
+    .form-title p{
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    .form{
+        flex-basis: 355px;
+        padding: 0px;
+    }
+
+    .name-title{
+        padding-top: 25px;
+    }
+
+
+    #comment-section{
+        width: 414px;
+        height: 191px;
+
+    }
+
+    .button-form{
+        padding: 18px 70px;
+
+    }
+
+
+}
+
+
+
